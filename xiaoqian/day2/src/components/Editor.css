@@ -1,0 +1,47 @@
+/* Editor specific styles */
+.editor-wrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background-color: var(--bg-secondary);
+}
+
+.line-numbers {
+  padding: 1rem 0.75rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: right;
+  user-select: none;
+  border-right: 1px solid var(--border-color);
+  overflow: hidden;
+  min-width: 50px;
+}
+
+.line-number {
+  height: 1.6em;
+}
+
+.editor-textarea {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+.editor-textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.editor-textarea::selection {
+  background-color: rgba(88, 166, 255, 0.3);
+}
